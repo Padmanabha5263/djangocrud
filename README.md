@@ -10,3 +10,26 @@ create, read, update, delete operation using django rest framework
 ## Docker image creation 
 1. run docker build -t djangocrud .
 2. run docker run --name dockercrudone -d -p 8000:8000 djangocrud
+
+## Api urls
+1. Method: GET
+   URL: http://localhost:8000/api/crud/customers
+
+2. Method: POST
+   Url: http://localhost:8000/api/crud/customers 
+   {
+    "name": "customername",
+    "age":30,
+    "phone": 19288372633
+   } 
+
+3.  Method: PUT
+    URL: http://localhost:8000/api/crud/customers/2
+    {
+    "name": "customername",
+    "age":30,
+    "phone": 19288372633
+   } 
+
+4.  Method: DELETE
+    URL: http://localhost:8000/api/crud/customers/2
